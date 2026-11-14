@@ -11,6 +11,7 @@
 - Explicar conceitos de forma objetiva; mostrar o equivalente JS -> Python.
 - Na dúvida, perguntar. Nunca inventar informações sobre o conteúdo das aulas.
 - O aluno enviará códigos e documentos das aulas quando necessário.
+- Não quero apenas copiar o código que o cloude fornecer e rodar, quero entender tudo o que está acontecendo.
 
 ## Primeira demo do curso
 Next.js + Better Auth + login com GitHub + SQLite + npm.
