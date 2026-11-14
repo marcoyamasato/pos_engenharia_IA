@@ -1,0 +1,22 @@
+[project]
+name = "exemplo-12-embeddings-neo4j"
+version = "0.0.1"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-community",       # PyPDFLoader
+    "langchain-text-splitters",  # RecursiveCharacterTextSplitter
+    "langchain-huggingface",     # embeddings locais
+    "langchain-neo4j",           # vector store no Neo4j
+    "sentence-transformers",     # roda o modelo all-MiniLM-L6-v2
+    "pypdf",                     # leitor de PDF usado pelo PyPDFLoader
+    "python-dotenv",             # lê o arquivo .env
+]
+
+# PyTorch versão CPU (bem menor que a versão com CUDA/GPU)
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
