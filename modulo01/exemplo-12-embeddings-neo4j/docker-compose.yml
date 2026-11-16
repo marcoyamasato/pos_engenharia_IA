@@ -1,7 +1,7 @@
 
 services:
   neo4j:
-    image: neo4j:5.14.0-community
+    image: neo4j:5.26-community  # aula usa 5.14; a versao Python (langchain-neo4j) exige 5.15+
     container_name: neo4j
     restart: unless-stopped
     volumes:
@@ -14,7 +14,7 @@ services:
       - "7687:7687"  # Bolt Protocol (for queries)
     environment:
       - NEO4J_AUTH=neo4j/password
-      - NEO4JLABS_PLUGINS=["apoc"]
+      - NEO4J_PLUGINS=["apoc"]
       - NEO4J_apoc_import_file_enabled=true
       # CALL apoc.export.csv.all("/var/lib/neo4j/import/neo4j-export.csv", {})
       # mv /var/lib/neo4j/import/neo4j-export.csv /data/neo4j-export.csv
