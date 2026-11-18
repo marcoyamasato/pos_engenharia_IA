@@ -1,0 +1,10 @@
+# pip install -r requirements.txt
+# Mesmas versões do exemplo 12 + langchain-openai (novo)
+langchain-community==0.4.2
+langchain-text-splitters==1.1.3
+langchain-huggingface==1.2.3
+langchain-neo4j==0.11.0
+langchain-openai==1.8.1
+sentence-transformers==6.3.0
+pypdf==6.21.4
+python-dotenv==1.2.4
