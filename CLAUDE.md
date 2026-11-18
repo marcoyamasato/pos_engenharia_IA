@@ -24,3 +24,8 @@ a pasta sem sufixo é o resultado final.
 ## Este repositório (versões em Python)
 Espelha a estrutura do curso: moduloXX/exemplo-YY-*/ com README mostrando o equivalente JS -> Python.
 Ferramentas: uv (gerenciador de pacotes), python-dotenv, LangChain para Python.
+
+## Progresso e pendências
+- Módulo 1, exemplos 12 (embeddings + Neo4j) e 13 (RAG) concluídos e rodando na máquina do aluno (Windows, pip).
+- Pendente: aprofundar LangChain em si (core vs integrações, Runnables/LCEL). Aluno pediu para estudar no futuro.
+- Modelos ":free" do OpenRouter mudam com frequência; o da aula (gemma-3-27b-it:free) já não funciona.
